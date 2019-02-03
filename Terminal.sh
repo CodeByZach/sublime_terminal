@@ -2,7 +2,7 @@
 
 CD_CMD="cd "\\\"$(pwd)\\\"" && clear"
 if echo "$SHELL" | grep -E "/fish$" &> /dev/null; then
-  CD_CMD="cd "\\\"$(pwd)\\\""; and clear"
+	CD_CMD="cd "\\\"$(pwd)\\\""; and clear"
 fi
 VERSION=$(sw_vers -productVersion)
 if (( $(expr $VERSION '<' 10.7.0) )); then

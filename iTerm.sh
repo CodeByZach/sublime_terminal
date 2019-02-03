@@ -2,7 +2,7 @@
 
 CD_CMD="cd "\\\"$(pwd)\\\"" && clear"
 if echo "$SHELL" | grep -E "/fish$" &> /dev/null; then
-  CD_CMD="cd "\\\"$(pwd)\\\""; and clear"
+	CD_CMD="cd "\\\"$(pwd)\\\""; and clear"
 fi
 VERSION=$(sw_vers -productVersion)
 OPEN_IN_TAB=0
@@ -21,7 +21,7 @@ done
 if (( $(expr $VERSION '<' 10.7) )); then
 	RUNNING=$(osascript<<END
 	tell application "System Events"
-	    count(processes whose name is "iTerm")
+		count(processes whose name is "iTerm")
 	end tell
 END
 )
