@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 CD_CMD="cd "\\\"$(pwd)\\\"" && clear"
 
