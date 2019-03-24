@@ -193,8 +193,8 @@ class OpenTerminalCommand(sublime_plugin.WindowCommand, TerminalCommand):
 
 		self.run_terminal(path, parameters)
 
-    def is_enabled(self):
-        return bool(self.window.active_view() and self.window.active_view().file_name())
+	def is_enabled(self):
+		return bool(self.window.active_view() and self.window.active_view().file_name())
 
 
 class OpenTerminalProjectFolderCommand(sublime_plugin.WindowCommand,
