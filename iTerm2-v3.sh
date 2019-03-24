@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 CD_CMD="cd "\\\"$(pwd)\\\"" && clear"
 if echo "$SHELL" | grep -E "/fish$" &> /dev/null; then
@@ -33,8 +33,6 @@ if (( ! $RUNNING )); then
 	osascript<<END
 	tell application "iTerm"
 		tell current window
-			create tab with default profile
-
 			tell current session
 				write text "$CD_CMD"
 			end tell
