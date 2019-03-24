@@ -21,7 +21,7 @@ done
 if (( $(expr $VERSION '<' 10.7) )); then
 	RUNNING=$(osascript<<END
 	tell application "System Events"
-		count(processes whose name is "iTerm")
+		count(processes whose name is "iTerm2")
 	end tell
 END
 )
@@ -32,41 +32,46 @@ fi
 if (( ! $RUNNING )); then
 	osascript<<END
 	tell application "iTerm"
-		tell current terminal
-			launch session "Default Session"
-			tell the last session
+		tell current window
+			tell current session
 				write text "$CD_CMD"
 			end tell
 		end tell
+
+		activate
 	end tell
 END
 else
 	if (( $OPEN_IN_TAB )); then
 		osascript &>/dev/null <<EOF
 		tell application "iTerm"
-			if (count of terminals) = 0 then
-				set term to (make new terminal)
+			if (count of windows) = 0 then
+				set theWindow to (create window with default profile)
+				set theSession to current session of theWindow
 			else
-				set term to current terminal
-			end if
-			tell term
-				launch session "Default Session"
-				tell the last session
-					write text "$CD_CMD"
+				set theWindow to current window
+				tell current window
+					set theTab to create tab with default profile
+					set theSession to current session of theTab
 				end tell
+			end if
+			tell theSession
+				write text "$CD_CMD"
 			end tell
+
+			activate
 		end tell
 EOF
 	else
 		osascript &>/dev/null <<EOF
 		tell application "iTerm"
-			set term to (make new terminal)
-			tell term
-				launch session "Default Session"
-				tell the last session
+			tell (create window with default profile)
+				tell the current session
 					write text "$CD_CMD"
 				end tell
 			end tell
+
+			activate
 		end tell
 EOF
 	fi
