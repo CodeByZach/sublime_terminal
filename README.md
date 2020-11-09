@@ -1,5 +1,5 @@
 # Sublime Terminal
-[![Latest Release](https://img.shields.io/github/tag/EatBreatheCode/sublime_terminal.svg?label=version)](https://github.com/EatBreatheCode/sublime_terminal/releases)
+[![Latest Release](https://img.shields.io/github/tag/CodeByZach/sublime_terminal.svg?label=version)](https://github.com/CodeByZach/sublime_terminal/releases)
 
 Shortcuts and menu entries for opening a terminal at the current file, or the current root project folder in [Sublime Text](http://sublimetext.com/).
 
