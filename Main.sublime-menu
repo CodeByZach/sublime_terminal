@@ -62,12 +62,32 @@
                                         }
                                     },
                                     {
+                                        "caption": "Main Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "is_parent_setting": "1",
+                                            "base_file": "${packages}/Terminal/Main.sublime-menu",
+                                            "default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+                                        }
+                                    },
+                                    {
                                         "caption": "Side Bar Menu",
                                         "command": "z_edit_settings",
                                         "args":
                                         {
                                             "is_parent_setting": "1",
                                             "base_file": "${packages}/Terminal/Side Bar.sublime-menu",
+                                            "default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+                                        }
+                                    },
+                                    {
+                                        "caption": "Side Bar Open Files Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "is_parent_setting": "1",
+                                            "base_file": "${packages}/Terminal/Tab Sidebar Context.sublime-menu",
                                             "default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
                                         }
                                     },
@@ -82,12 +102,12 @@
                                         }
                                     },
                                     {
-                                        "caption": "Main Menu",
-                                        "command": "z_edit_settings",
+                                        "caption": "Widget Menu",
+                                        "command": "edit_settings",
                                         "args":
                                         {
                                             "is_parent_setting": "1",
-                                            "base_file": "${packages}/Terminal/Main.sublime-menu",
+                                            "base_file": "${packages}/Terminal/Widget Context.sublime-menu",
                                             "default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
                                         }
                                     }
