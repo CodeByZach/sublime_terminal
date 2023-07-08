@@ -1,4 +1,6 @@
+// <> NOTICE <>
+// Any changes made here could be overwritten when this program is updated.
 [
-	{ "keys": ["ctrl+shift+q"], "command": "open_terminal" },
-	{ "keys": ["ctrl+shift+alt+q"], "command": "open_terminal_project_folder" }
+    { "keys": ["alt+shift+t"], "command": "open_terminal" },
+    { "keys": ["ctrl+alt+shift+t"], "command": "open_terminal_project_folder" }
 ]

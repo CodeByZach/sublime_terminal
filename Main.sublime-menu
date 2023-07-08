@@ -1,108 +1,118 @@
 // <> NOTICE <>
 // Any changes made here could be overwritten when this program is updated.
 [
-	{
-		"id": "preferences",
-		"caption": "Preferences",
-		"mnemonic": "n",
-		"children":
-		[
-			{
-				"id": "package-settings",
-				"caption": "Package Settings",
-				"mnemonic": "P",
-				"children":
-				[
-					{
-						"caption": "Terminal",
-						"children":
-						[
-							{
-								"caption": "Settings",
-								"command": "edit_settings",
-								"args":
-								{
-									"base_file": "${packages}/Terminal/Terminal (${platform}).sublime-settings",
-									"default": "{\n\t$0\n}\n"
-								}
-							},
-							{ "caption": "-" },
-							{
-								"caption": "Key Bindings",
-								"command": "edit_settings",
-								"args":
-								{
-									"base_file": "${packages}/Terminal/Default (${platform}).sublime-keymap",
-									"default": "[\n\t$0\n]\n"
-								}
-							},
-							{ "caption": "-" },
-							{
-								"caption": "Menus",
-								"children":
-								[
-									{
-										"caption": "Context Menu",
-										"command": "z_edit_settings",
-										"args":
-										{
-											"is_parent_setting": "1",
-											"base_file": "${packages}/Terminal/Context.sublime-menu",
-											"default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
-										}
-									},
-									{
-										"caption": "Side Bar Menu",
-										"command": "z_edit_settings",
-										"args":
-										{
-											"is_parent_setting": "1",
-											"base_file": "${packages}/Terminal/Side Bar.sublime-menu",
-											"default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
-										}
-									},
-									{
-										"caption": "Tab Menu",
-										"command": "z_edit_settings",
-										"args":
-										{
-											"is_parent_setting": "1",
-											"base_file": "${packages}/Terminal/Tab Context.sublime-menu",
-											"default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
-										}
-									},
-									{
-										"caption": "Main Menu",
-										"command": "z_edit_settings",
-										"args":
-										{
-											"is_parent_setting": "1",
-											"base_file": "${packages}/Terminal/Main.sublime-menu",
-											"default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
-										}
-									}
-								]
-							},
-							{
-								"caption": "Commands",
-								"command": "z_edit_settings",
-								"args":
-								{
-									"is_parent_setting": "1",
-									"base_file": "${packages}/Terminal/Default.sublime-commands",
-									"default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
-								}
-							},
-							{ "caption": "-" },
-							{
-								"caption": "README",
-								"command": "open_file",
-								"args": { "file": "${packages}/Terminal/README.md" }
-							}
-						]
-					}
-				]
-			}
-		]
-	}
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "Terminal",
+                        "children":
+                        [
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args":
+                                {
+                                    "base_file": "${packages}/Terminal/Terminal.sublime-settings",
+                                    "default": "{\n\t$0\n}\n",
+                                }
+                            },
+                            {
+                                "caption": "Settings (OS)",
+                                "command": "edit_settings",
+                                "args":
+                                {
+                                    "base_file": "${packages}/Terminal/Terminal.sublime-settings",
+                                    "user_file": "${packages}/User/Terminal (${platform}).sublime-settings",
+                                    "default": "{\n\t$0\n}\n"
+                                }
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Key Bindings",
+                                "command": "edit_settings",
+                                "args":
+                                {
+                                    "base_file": "${packages}/Terminal/Default (${platform}).sublime-keymap",
+                                    "default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+                                }
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Menus",
+                                "children":
+                                [
+                                    {
+                                        "caption": "Context Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "is_parent_setting": "1",
+                                            "base_file": "${packages}/Terminal/Context.sublime-menu",
+                                            "default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+                                        }
+                                    },
+                                    {
+                                        "caption": "Side Bar Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "is_parent_setting": "1",
+                                            "base_file": "${packages}/Terminal/Side Bar.sublime-menu",
+                                            "default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+                                        }
+                                    },
+                                    {
+                                        "caption": "Tab Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "is_parent_setting": "1",
+                                            "base_file": "${packages}/Terminal/Tab Context.sublime-menu",
+                                            "default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+                                        }
+                                    },
+                                    {
+                                        "caption": "Main Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "is_parent_setting": "1",
+                                            "base_file": "${packages}/Terminal/Main.sublime-menu",
+                                            "default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "caption": "Commands",
+                                "command": "z_edit_settings",
+                                "args":
+                                {
+                                    "is_parent_setting": "1",
+                                    "base_file": "${packages}/Terminal/Default.sublime-commands",
+                                    "default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+                                }
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "README",
+                                "command": "open_file",
+                                "args": { "file": "${packages}/Terminal/README.md" }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 ]

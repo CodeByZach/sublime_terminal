@@ -1,9 +1,9 @@
 // <> NOTICE <>
 // Any changes made here could be overwritten when this program is updated.
 [
-	{
-		"caption": "Open Terminal Here…",
-		"command": "open_terminal",
-		"args": { "paths": [] }
-	}
+    {
+        "caption": "Open Terminal Here…",
+        "command": "open_terminal",
+        "args": { "paths": [] }
+    }
 ]

@@ -1,12 +1,12 @@
 // <> NOTICE <>
 // Any changes made here could be overwritten when this program is updated.
 [
-	{
-		"caption": "Terminal: Open",
-		"command": "open_terminal"
-	},
-	{
-		"caption": "Terminal: Open in project folder",
-		"command": "open_terminal_project_folder"
-	}
+    {
+        "caption": "Terminal: Open",
+        "command": "open_terminal"
+    },
+    {
+        "caption": "Terminal: Open in project folder",
+        "command": "open_terminal_project_folder"
+    }
 ]
