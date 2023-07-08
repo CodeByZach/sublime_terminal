@@ -23,7 +23,7 @@
         "command": "edit_settings",
         "args": {
             "base_file": "${packages}/Terminal/Default (${platform}).sublime-keymap",
-            "default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+            "default": "[\n\t$0\n]\n"
         }
     }
     { "caption": "Terminal: Open", "command": "open_terminal" },
