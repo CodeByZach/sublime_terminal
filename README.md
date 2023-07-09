@@ -10,9 +10,9 @@ Download [Package Control](https://packagecontrol.io/) and use the *Package Cont
 ## Usage
 
 - **Open Terminal at File**
-    Press *alt+shift+t* on Windows, Linux, or macOS.
+    Press *<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>* on Windows, Linux, or macOS.
 - **Open Terminal at Project Folder**
-    Press *ctrl+alt+shift+t* on Windows, Linux, or macOS.
+    Press *<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>* on Windows, Linux, or macOS.
 
 In addition to the key bindings, terminals can also be opened via the editor context menu and the sidebar context menus.
 
