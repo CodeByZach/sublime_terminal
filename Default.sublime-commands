@@ -4,7 +4,8 @@
     {
         "caption": "Preferences: Terminal Settings",
         "command": "edit_settings",
-        "args": {
+        "args":
+        {
             "base_file": "${packages}/Terminal/Terminal.sublime-settings",
             "default": "{\n\t$0\n}\n",
         }
@@ -12,7 +13,8 @@
     {
         "caption": "Preferences: Terminal Settings (OS)",
         "command": "edit_settings",
-        "args": {
+        "args":
+        {
             "base_file": "${packages}/Terminal/Terminal.sublime-settings",
             "user_file": "${packages}/User/Terminal (${platform}).sublime-settings",
             "default": "{\n\t$0\n}\n"
@@ -21,11 +23,12 @@
     {
         "caption": "Preferences: Terminal Key Bindings",
         "command": "edit_settings",
-        "args": {
+        "args":
+        {
             "base_file": "${packages}/Terminal/Default (${platform}).sublime-keymap",
             "default": "[\n\t$0\n]\n"
         }
     }
-    { "caption": "Terminal: Open", "command": "open_terminal" },
+    { "caption": "Terminal: Open",                   "command": "open_terminal" },
     { "caption": "Terminal: Open in project folder", "command": "open_terminal_project_folder" }
 ]
