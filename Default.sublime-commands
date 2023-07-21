@@ -28,7 +28,7 @@
             "base_file": "${packages}/Terminal/Default (${platform}).sublime-keymap",
             "default": "[\n\t$0\n]\n"
         }
-    }
+    },
     { "caption": "Terminal: Open",                   "command": "open_terminal" },
     { "caption": "Terminal: Open in project folder", "command": "open_terminal_project_folder" }
 ]
